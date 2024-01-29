@@ -257,6 +257,9 @@ require('lazy').setup({
     build = ':TSUpdate',
   },
 
+  -- Easily center align pane 
+  'smithbm2316/centerpad.nvim',
+
   -- NOTE: Next Step on Your Neovim Journey: Add/Configure additional "plugins" for kickstart
   --       These are some example plugins that I've included in the kickstart repository.
   --       Uncomment any of the lines below to enable them.
@@ -316,7 +319,7 @@ vim.o.termguicolors = true
 -- [[ Personal Setting Options ]]
 
 -- turn off word wrap
-vim.o.wrap = false
+vim.o.wrap = true
 
 -- relative line numbers
 vim.wo.relativenumber = true
