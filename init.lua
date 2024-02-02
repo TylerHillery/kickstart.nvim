@@ -362,6 +362,9 @@ for _, key in pairs(keys) do
     vim.keymap.set({ 'c', 'i', 'n', 'v' }, key, '<Nop>', { noremap = true, silent = true })
 end
 
+-- Centerpad 60 which puts it just outside the column 80 color
+vim.api.nvim_set_keymap('n', '<leader>z', "<cmd>lua require'centerpad'.toggle{ leftpad = 60, rightpad = 60 }<cr>", { silent = true, noremap = true })
+
 -- Diagnostic keymaps
 vim.keymap.set('n', '[d', vim.diagnostic.goto_prev, { desc = 'Go to previous diagnostic message' })
 vim.keymap.set('n', ']d', vim.diagnostic.goto_next, { desc = 'Go to next diagnostic message' })
