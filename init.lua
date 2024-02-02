@@ -321,6 +321,9 @@ vim.o.termguicolors = true
 -- turn off word wrap
 vim.o.wrap = true
 
+-- Wrap lines at word boundries
+vim.o.linebreak = true
+
 -- relative line numbers
 vim.wo.relativenumber = true
 
