@@ -333,20 +333,6 @@ vim.opt.scrolloff = 8
 -- add line for column width to know when lines are getting long 
 vim.opt.colorcolumn = "80"
 
--- sync clipboard with windows clipboard
-vim.g.clipboard = {
-  name = 'WslClipboard',
-  copy = {
-    ['+'] = 'clip.exe',
-    ['*'] = 'clip.exe'
-  },
-  paste = {
-    ['+'] = 'powershell.exe -c [Console]::Out.Write($(Get-Clipboard -Raw).tostring().replace("`r", ""))',
-    ['*'] = 'powershell.exe -c [Console]::Out.Write($(Get-Clipboard -Raw).tostring().replace("`r", ""))'
-  },
-  cache_enabled = 0
-}
-
 -- [[ Basic Keymaps ]]
 
 -- Keymaps for better default experience
