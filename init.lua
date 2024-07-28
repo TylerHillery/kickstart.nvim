@@ -333,6 +333,10 @@ vim.opt.scrolloff = 8
 -- add line for column width to know when lines are getting long 
 vim.opt.colorcolumn = "80"
 
+-- add defaults for tabstop and shiftwidth if vim-sleuth can't detect anything
+vim.opt.tabstop = 4
+vim.opt.shiftwidth = 4
+
 -- [[ Basic Keymaps ]]
 
 -- Keymaps for better default experience
